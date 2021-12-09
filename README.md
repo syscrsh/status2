@@ -1,6 +1,6 @@
 # status2
 
-This is the "prettyfied" version of a small status Script I wrote a while ago and use pretty much 
+This is the "prettified" version of a small status Script I wrote a while ago and use pretty much 
 on every networked Device I own.
 
 It just displays various things of the Machine it's executed on, like Ram & Disk usage, Temperatures etc.
@@ -20,7 +20,7 @@ For simple usage, just download the file to where you want it, then
 
 However, a _much_ nicer way of using this, is to have this part of a tmux setup.
 
-The way I use this is like this (see screenshot below for end result):
+The way I use it is like this (see screenshot below for end result):
 
 * Have this file `status2.sh` on every networked Machine that I use with tmux.
   
