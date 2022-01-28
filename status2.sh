@@ -74,30 +74,30 @@ disk_home=$(df -h |grep -w '/home')
 # print all the things !
 printheader
 printbanner $hostname
-echo -en "\n${YELLOW}[+] user info${NC}\n"
-printf "\t${CYAN}username${NC} :  ${GREEN}$username${NC}\n"
-printf "\t${CYAN}hostname${NC} :  ${GREEN}$hostname${NC}\n"
-printf "\t${CYAN}shell${NC}    :  ${GREEN}$shell${NC}\n"
-echo -en "${YELLOW}[+] os info${NC}\n"
-printf "\t${CYAN}distro${NC}   :  ${GREEN}$dist_name $dist_version${NC}\n"
-printf "\t${CYAN}kernel${NC}   :  ${GREEN}$kernel${NC}\n"
-printf "\t${CYAN}uptime${NC}   :  ${GREEN}$uptime${NC}\n"
-printf "\t${CYAN}time${NC}     :  ${GREEN}$date${NC}\n"
-printf "\t${CYAN}packages${NC} :  ${GREEN}$package_count${NC}\n"
-printf "\t${CYAN}ip addr${NC}  :  ${GREEN}$ip_addr${NC}\n"
-echo -en "${YELLOW}[+] hardware info${NC}\n"
-printf "\t${CYAN}cpu${NC}      :  ${GREEN}$cpu_info${NC}\n"
-printf "\t${CYAN}temp${NC}     :  ${GREEN}$coretemp_0${NC}\n" 
-printf "\t\t :  ${GREEN}$coretemp_1${NC}\n" 
-printf "\t\t :  ${GREEN}$coretemp_2${NC}\n" 
-printf "\t\t :  ${GREEN}$coretemp_3${NC}\n" 
-printf "\t\t :  ${GREEN}$coretemp_4${NC}\n" 
-printf "\t\t :  ${GREEN}$coretemp_5${NC}\n" 
-printf "\t${CYAN}board${NC}    :  ${GREEN}$mobo_vendor $mobo_name${NC}\n"
-printf "\t${CYAN}memory${NC}   :  ${GREEN}$mem_total${NC}\n"
-printf "\t${CYAN}used${NC}     :  ${GREEN}$mem_used${NC}\n"
-printf "\t${CYAN}swap${NC}     :  ${GREEN}$swap_total${NC}\n"
-printf "\t${CYAN}used${NC}     :  ${GREEN}$swap_used${NC}\n"
-echo -en "${YELLOW}[+] disk info${NC}\n"
-echo -en "\t${CYAN}$disk_header\n"
-echo -en "\t${GREEN}$disk_root${NC}\n"
+echo -e "\n${YELLOW}[+] user info${NC}\n"                                   \
+        "\t${CYAN}username${NC} :  ${GREEN}$username${NC}\n"                \
+        "\t${CYAN}hostname${NC} :  ${GREEN}$hostname${NC}\n"                \
+        "\t${CYAN}shell${NC}    :  ${GREEN}$shell${NC}\n"                   \
+        "${YELLOW}[+] os info${NC}\n"                                       \
+        "\t${CYAN}distro${NC}   :  ${GREEN}$dist_name $dist_version${NC}\n" \
+        "\t${CYAN}kernel${NC}   :  ${GREEN}$kernel${NC}\n"                  \
+        "\t${CYAN}uptime${NC}   :  ${GREEN}$uptime${NC}\n"                  \
+        "\t${CYAN}time${NC}     :  ${GREEN}$date${NC}\n"                    \
+        "\t${CYAN}packages${NC} :  ${GREEN}$package_count${NC}\n"           \
+        "\t${CYAN}ip addr${NC}  :  ${GREEN}$ip_addr${NC}\n"                 \
+        "${YELLOW}[+] hardware info${NC}\n"                                 \
+        "\t${CYAN}cpu${NC}      :  ${GREEN}$cpu_info${NC}\n"                \
+        "\t${CYAN}temp${NC}     :  ${GREEN}$coretemp_0${NC}\n"              \
+        "\t\t :  ${GREEN}$coretemp_1${NC}\n"                                \
+        "\t\t :  ${GREEN}$coretemp_2${NC}\n"                                \
+        "\t\t :  ${GREEN}$coretemp_3${NC}\n"                                \
+        "\t\t :  ${GREEN}$coretemp_4${NC}\n"                                \
+        "\t\t :  ${GREEN}$coretemp_5${NC}\n"                                \
+        "\t${CYAN}board${NC}    :  ${GREEN}$mobo_vendor $mobo_name${NC}\n"  \
+        "\t${CYAN}memory${NC}   :  ${GREEN}$mem_total${NC}\n"               \
+        "\t${CYAN}used${NC}     :  ${GREEN}$mem_used${NC}\n"                \
+        "\t${CYAN}swap${NC}     :  ${GREEN}$swap_total${NC}\n"              \
+        "\t${CYAN}used${NC}     :  ${GREEN}$swap_used${NC}\n"               \
+        "${YELLOW}[+] disk info${NC}\n"                                     \
+        "\t${CYAN}$disk_header\n"                                           \
+        "\t${GREEN}$disk_root${NC}\n"                                      
