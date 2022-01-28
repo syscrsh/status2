@@ -1,15 +1,13 @@
 # status2
 
-This is the "prettified" version of a small status Script I wrote a while ago and use pretty much 
-on every networked Device I own.
+This is the "prettified" version of a small status script I wrote a while ago and use pretty much 
+on every networked device I own.
 
-It just displays various things of the Machine it's executed on, like Ram & Disk usage, Temperatures etc.
+It just displays various things of the machine it's executed on, like RAM & disk usage, temperatures etc.
 
-Since I basically only run Linux in my main LAN, there is little need for any other Operating Systems or fancy stuff.
+Since I basically only run Linux in my main LAN, there is little need for any other OS or fancy stuff.
 If you want to use this, you'll very likely have to make adjustments depending on the machine, 
-like the number of Cores, mounted Drives, whether you can get Temperatures etc.
-
-Fixing the messy printing Code is left as an excercise for the reader :)
+like the number of Cores, mounted drives, whether you can get temperatures etc.
 
 **Usage**
 
@@ -24,9 +22,9 @@ The way I use it is like this (see screenshot below for end result):
 
 * Have this file `status2.sh` on every networked Machine that I use with tmux.
   
-* Start a tmux session on the remote Machine that sets up Windows and Panes the way I like it.
+* Start a tmux session on the remote Machine that sets up windows and oanes the way I like it.
   
-* Have one Window `control` and split this with `htop` and this script.
+* Have one window `control` and split this with `htop` and this script.
 
 * Execute this script with `watch --color -n1 './status2.sh'` to get a continuous refresh. 
   
@@ -34,12 +32,9 @@ The way I use it is like this (see screenshot below for end result):
 
 **Bugs**
 
-* This obviously requires tweaks from Machine to Machine as there is no "intelligence" baked in
-  to keep the Code small and compact.
+* This obviously requires tweaks from machine to machine as there is no "intelligence" baked in
+  to keep the code small and compact.
 
-* Usually when I put this on a new Machine, I adjust the Number of Cores and Drives and maybe add an ASCII header if I feel like it.
-
-* As I said, the printing Code is kind of ugly and shellcheck doesn't like it at all, but at this point I don't care to fix it
-  since I don't really plan to extend this further.
+* Usually when I put this on a new machine, I adjust the number of cores and drives and maybe add an ASCII header if I feel like it.
 
 ![screenshot](screen.png)
